@@ -1,0 +1,45 @@
+<p>cars works!</p>
+<div>
+    <h1> Cars Table!!!</h1>
+    <p>{{text}}</p>
+    <div class="m-t-1 m-b-1"> 
+      <input class="form-control" #todoText /> 
+      <button class="btn btn-primary m-t-1" (click)="addItem(todoText.value)"> 
+      Add 
+      </button> 
+     </div> 
+    <ul>
+        <li *ngFor="let item of getInfoName(); let idx = index ">
+          <b>{{idx+1}}</b> - <i>{{item}}</i>
+        </li>
+      </ul>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody class="table-hover">
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
