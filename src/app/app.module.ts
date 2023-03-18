@@ -8,12 +8,14 @@ import { PersonComponent } from './person/person.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CarsComponent } from './cars/cars.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PersonComponent
+    PersonComponent,
+    CarsComponent
   ],
   imports: [
     BrowserModule,
